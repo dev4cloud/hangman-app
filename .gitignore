@@ -1,1 +1,11 @@
-launchConfigurations/
+# Ignore compile output by ignoring bin/ folder
+bin/
+
+# Generally exclude .class files (matches .class files in WebContent path)
+*.class
+
+# Ignore build artifacts
+*.war
+
+# Ignore local Eclipse classpath settings
+.classpath
