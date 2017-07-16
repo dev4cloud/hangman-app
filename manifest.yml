@@ -1,10 +1,11 @@
 applications:
 - services:
-  - MongoLab-mk
+  - Cloudant NoSQL Hangman
   disk_quota: 1024M
-  host: hangmangame
+  host: hangman-app
   name: HangmanGame
   path: webStarterApp.war
-  domain: ng.bluemix.net
+ # domain: ng.bluemix.net
+  domain: mybluemix.net
   instances: 1
-  memory: 512M
+  memory: 1024M
