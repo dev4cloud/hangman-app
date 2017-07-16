@@ -4,12 +4,18 @@
     <property environment="env"/>
     <property name="srcDir" value="."/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.5"/>
-    <property name="source" value="1.5"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+	
+	
     <path id="classpathDir">
         <pathelement location="bin"/>
         <pathelement location="WebContent/WEB-INF/lib/org.ektorp-1.4.2.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/jackson-annotations-2.4.0.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/javax.servlet-api-3.1.0.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/wink-1.2.1-incubating.jar"/>
     </path>
+	
     <target name="init">
         <mkdir dir="bin"/>
     </target>
@@ -35,7 +41,9 @@
 	  	<fileset dir="WebContent">
 	  		<include name="index.jsp"/>
 	  		<include name="index.js"/>
+	  		<include name="dojo.js"/>
 	  		<include name="style.css"/>
+	  		<include name="img/*"/>
 	    </fileset>
 	  	<lib dir="WebContent/WEB-INF/lib"/>
 	  	<classes dir="bin"/>
